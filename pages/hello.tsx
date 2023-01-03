@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-export default function Gsap() {
+export default function Hello() {
     const [name, setName] = useState(null as any)
     useEffect(() => {
         const fetchData = async () => {
@@ -10,7 +10,7 @@ export default function Gsap() {
         fetchData();
     }, []);
     return <div>
-        <div>Gsap</div>
+        <div>Hello</div>
         <div>{name}</div>
     </div>
 }
