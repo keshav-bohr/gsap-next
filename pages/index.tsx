@@ -117,7 +117,14 @@ export default function Home() {
               <p className={inter.className}>
                 This component explains how to create an API in Next js and how to utilize it
               </p>
-            
+          </Link>
+          <Link href="/clock" className={styles.card}>
+              <h2 className={inter.className}>
+                Clock <span>-&gt;</span>
+              </h2>
+              <p className={inter.className}>
+                This routes to the Clock page of this project.
+              </p>
           </Link>
         </div>
       </main>

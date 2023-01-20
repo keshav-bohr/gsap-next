@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import gsap from 'gsap'
 
 export default function CountryList({ countries }: { countries: [{ name: string }] }) {
-    const list = gsap.utils.toArray(".country_list");
+    let list: gsap.TweenTarget
     let newMax = 0;
     function makeItHappen() {
         newMax = newMax < 600 ? newMax + 100 : 100;
@@ -18,6 +18,7 @@ export default function CountryList({ countries }: { countries: [{ name: string 
 
 makeItHappen();
     useEffect(() => {
+        list = gsap.utils.toArray(".country_list");
         makeItHappen()
     }, [])
     
