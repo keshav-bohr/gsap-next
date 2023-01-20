@@ -80,44 +80,33 @@
 
 .hand {
     position: absolute;
-    top: calC(50% - 1px);
     left: calC(50% - 9px);
-    transform-origin: top;
+    transform-origin: bottom;
     border-radius: 10px;
 }
 
 .clock_hour_hand {
+    top: calc(50% - 7rem);
     width: 15px;
     height: 7rem;
     background-color: red;
-    transform: rotate(120deg);
     z-index: 3;
 }
 
 .clock_minute_hand {
-    left: calC(50% - 6px);
+    top: calc(50% - 10rem);
+    left: calC(50% - 7px);
     width: 10px;
     height: 10rem;
     background-color: yellow;
     z-index: 4;
-    transform: rotate(245deg);
 }
 
 .clock_second_hand {
+    top: calc(50% - 11rem);
     left: calC(50% - 4px);
     width: 5px;
     height: 11rem;
     background-color: white;
     z-index: 5;
-    animation: secondsMotion 60s infinite linear;
 }
-
-@keyframes secondsMotion {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
