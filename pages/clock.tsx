@@ -21,6 +21,7 @@ export default function Clock() {
     }
 
     useEffect(() => {
+        // Adding another comment
         setInterval(() => {
             setAngle()
         }, 1000);
